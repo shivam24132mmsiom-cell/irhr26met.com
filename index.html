@@ -1,0 +1,95 @@
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Industrial Relations & Labor Law Hub</title>
+         <!-- External CSS -->
+    <link rel="stylesheet" href="1.css">
+<!-- External JavaScript -->
+<script src="2.js"></script>
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <img 
+      src="https://i.pinimg.com/1200x/36/94/57/369457e9a1c5c019de4af337916aa75c.jpg" width="1550", height="350"
+      alt="Lady Justice"
+      class="hero-bg"
+    >
+</head>
+
+<body>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+        <style>
+            * {margin:0;padding:0;box-sizing:border-box;}
+            body {font-family:'Segoe UI',sans-serif;line-height:1.6;color:#333;background:grey(135deg,#667eea 0%,#764ba2 100%);min-height:100vh;}
+            .container {max-width:1200px;margin:0 auto;padding:20px;}
+            header {text-align:center;color:black;margin-bottom:50px;padding:40px 0;}
+            h1 {font-size:3.5rem;margin-bottom:10px;text-shadow:2px 2px 4px rgba(0,0,0,0.3);}
+            .subtitle {font-size:1.3rem;opacity:0.9;margin-bottom:30px;}
+            .search-box {max-width:500px;margin:0 auto 40px;position:relative;}
+            .search-box input {width:100%;padding:15px 50px 15px 20px;border:none;border-radius:50px;font-size:1.1rem;box-shadow:0 10px 30px rgba(0,0,0,0.2);}
+            .search-btn {position:absolute;right:10px;top:50%;transform:translateY(-50%);background:#ff6b6b;border:none;color:white;width:40px;height:40px;border-radius:50%;cursor:pointer;transition:all 0.3s;}
+            .search-btn:hover {background:#ff5252;transform:translateY(-50%) scale(1.1);}
+            .topics-grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:30px;margin-bottom:50px;}
+            
+            /* ⭐ NEW TAB STYLING */
+            .topic-card {background:offwhite;border-radius:20px;padding:30px;box-shadow:0 20px 40px rgba(0,0,0,0.1);cursor:pointer;transition:all 0.4s ease;position:relative;overflow:hidden;text-decoration:none;color:inherit;}
+            .topic-card::before {content:'';position:absolute;top:0;left:0;right:0;height:5px;background:linear-gradient(90deg,#ff6b6b,#4ecdc4,#45b7d1);}
+            .topic-card:hover {transform:translateY(-15px) scale(1.02);box-shadow:0 30px 60px rgba(0,0,0,0.2);}
+            .topic-icon {font-size:3rem;margin-bottom:20px;display:block;transition:all 0.3s;}
+            .topic-card:hover .topic-icon {transform:scale(1.2) rotate(5deg);}
+            .topic-title {font-size:1.6rem;font-weight:700;margin-bottom:10px;color:#2c3e50;}
+            .topic-desc {color:#666;margin-bottom:20px;}
+            .key-points {list-style:none;}
+            .key-points li {padding:5px 0;color:#555;}
+            .key-points li::before {content:"✓ ";color:#4ecdc4;font-weight:bold;}
+            
+            /* ⭐ NEW TAB INDICATOR */
+            .new-tab-badge {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                background: #ff6b6b;
+                color: white;
+                padding: 4px 12px;
+                border-radius: 20px;
+                font-size: 0.75rem;
+                font-weight: 700;
+                animation: pulse 2s infinite;
+            }
+            @keyframes pulse {
+                0% { transform: scale(1); }
+                50% { transform: scale(1.05); }
+                100% { transform: scale(1); }
+            }
+            
+            footer {text-align:center;color:rgb(10, 10, 10);padding:30px;opacity:0.9;}
+            @media (max-width:768px) {h1{font-size:2.5rem;}.topics-grid{grid-template-columns:1fr;gap:20px;}}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1><i class="fas fa-balance-scale"></i> Industrial Relations & Labor Law</h1>
+                <p class="subtitle">Comprehensive Resource Hub for HR Professionals</p>
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search topics">
+                    <button>class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                </div>
+            </header>
+    
+            <div class="topics-grid" id="topicsGrid">
+                <!-- Topics loaded dynamically by JS -->
+            </div>
+    
+            <footer>
+                <p>For HR Professionals| Updated Feb 2026 </p>
+            </footer>
+        </div>
+    
+        <!-- ⭐ LOADS SEPARATE JS FILE -->
+        <script src="2.js"></script>
+        <footer> <p>© 2026 | Industrial Relations & Labour Law Website</p> <p>Created for Academic & Learning Purposes</p> </footer>
+    </body>
+    </html>
+    
